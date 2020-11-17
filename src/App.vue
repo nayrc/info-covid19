@@ -1,28 +1,45 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <b-container class="bv-example-row">
+      <Heading />
+      <hr />
+      <GlobalInfo />
+      <hr />
+      <IndonesiaInfo />
+      <hr />
+      <Country />
+      <hr />
+      <Footer />
+    </b-container>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import {
+  Heading,
+  GlobalInfo,
+  IndonesiaInfo,
+  Country,
+  Footer,
+} from "./components";
 export default {
-  name: 'App',
+  title: "Cryan",
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Heading,
+    GlobalInfo,
+    IndonesiaInfo,
+    Country,
+    Footer,
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
 }
 </style>
